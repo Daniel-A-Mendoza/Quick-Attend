@@ -11,7 +11,6 @@ export const Dashboard = () => {
   
 
     const handleStudent = () => {
-        
         navigate("/studentdashboard");
     };
 
