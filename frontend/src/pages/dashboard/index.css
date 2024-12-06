@@ -1,0 +1,101 @@
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin-bottom: 20px;
+    padding: 0;
+}
+.header{
+    text-align: right;
+    margin-left: 80%;
+    margin-right: 25%;
+}
+
+.role-header{
+    text-align: center;
+
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: rgb(3, 63, 70); 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px 15px 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-box{
+    width: 100%;
+    background-color: white;
+    margin-right: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.leader-box{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.student-btn{
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 15px 30px;
+    
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: rgb(3, 63, 70); 
+    border-radius: 200px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-btn:hover {
+    background-color: #3b7dd8;
+    transform: scale(1.05);
+}
+
+.leader-btn{
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 15px 30px;
+    
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: rgb(3, 63, 70); 
+    border-radius: 200px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leader-btn:hover {
+    background-color: #3b7dd8;
+    transform: scale(1.05);
+}
+

@@ -14,6 +14,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'; // Material-UI
 
 import {TimePicker} from '@mui/x-date-pickers/TimePicker'; 
+import "./index.css";
 
 // import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 // // date-fns
@@ -187,7 +188,7 @@ const GroupPage = () => {
     const group = location.state;
 
     return (
-        <div>
+        <div className = "container3">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
             <h1>Group Information</h1>
             <button onClick = {() => {

@@ -8,6 +8,7 @@ import GroupMap from "../../components/group/groupMap.jsx";
 import { useNavigate } from "react-router-dom";
 import GroupCard from "../../components/group/groupCard.jsx";
 import { Link, useLocation } from "react-router-dom";
+import "./index.css";
 
 // import {GroupCard} from "../../components/group/groupCard.jsx";
 
@@ -95,6 +96,13 @@ export const LeaderDashboard = () => {
 
     return (
         <div>
+            <div className = "leader-header">
+                <Header />
+            </div>
+            
+            <div className = "leader-dash-background">
+
+            
             <h1>Leader Dashboard</h1>
             <p>Want to Create a Group?</p>
             <button onClick = {handleOpenPopup}>Create Group</button>
@@ -121,7 +129,8 @@ export const LeaderDashboard = () => {
                 <button onClick={createGroup}>Submit</button>
             </Popup>
             <p/>
-            <Header />
+            <h2>List of Groups</h2>
+            
             <ul>
                 {groups.map((group) => {
                     return (
@@ -131,9 +140,8 @@ export const LeaderDashboard = () => {
                     );
                 })}
             </ul>
-            <p>Here will be the props of the Groups</p>
-            <p> It will have the same style as Canvas for courses</p>
-
+            
+            </div>
         </div>
     );
 };

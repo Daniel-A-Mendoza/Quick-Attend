@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-
+import "./index.css";
 export const DashboardBtn = () => {
     const navigate = useNavigate();
 

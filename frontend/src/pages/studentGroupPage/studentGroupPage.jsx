@@ -16,7 +16,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'; // Material-UI
 
 import {TimePicker} from '@mui/x-date-pickers/TimePicker'; 
-
+import "./index.css";
 // import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 // // date-fns
 // import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -117,7 +117,7 @@ const StudentGroupPage = () => {
                  });
            
         } else {
-            alert("Group code does not exist.");
+            alert("Session code does not exist.");
 
         }
 
@@ -131,7 +131,7 @@ const StudentGroupPage = () => {
     const group = location.state;
 
     return (
-        <div>
+        <div className = "container2">
             <h1>Group Information</h1>
             <button onClick = {() => {
                 navigate('/studentDashboard');
@@ -158,9 +158,7 @@ const StudentGroupPage = () => {
                 {sessions.map((session) => {
                     return (
                         <li key={session.sessionID}>
-                            {session.sessionName}
-                            {session.date}
-                            {session.sessionID}
+                            <p>{session.sessionName} {session.date} {session.sessionID}</p>
                         </li>
                     )
                 })}

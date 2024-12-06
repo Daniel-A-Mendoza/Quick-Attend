@@ -1,0 +1,27 @@
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.header-student{
+    margin-left: 150%;
+    margin-right: 25%;
+}
+
+.student-dashboard{
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:white;
+ 
+}
+
+
+

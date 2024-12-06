@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { useGetUserInfo } from "../../../../backend/hooks/useGetUserInfo.js";
 import { useNavigate } from "react-router-dom";
 import StudentGroup from "../../components/studentGroups/studentGroup.jsx";
-
+import "./index.css";
 export const StudentDashboard = () => {
     const navigate = useNavigate();
     const [groups, setGroups] = useState([]);
@@ -104,16 +104,18 @@ export const StudentDashboard = () => {
       
     return (
         <div>
+            <div className = "header-student">
+                <Header />
+            </div>
+            <div className = "student-dashboard">
             <h1>Student Dashboard</h1>
-            <p>View Attendnace</p>
-            <p> Join Group </p>
             <button onClick = {handleOpenPopup}>Join a Group</button>
             <Popup isOpen = {isPopupOpen} onClose = {handleClosePopup}>
                 <h2>Enter a Group Code to Join: </h2>
                 <input type="text" id="groupCode"/>
                 <button onClick = {checkGroupCode} onClose = {handleOpenPopup}>Join Group</button>
             </Popup>
-            <p> Select Group</p>
+            <p>Mark and View Attendance for Selected Group</p>
             <ul>
                 {groups.map((group) => {
                     return (
@@ -123,7 +125,7 @@ export const StudentDashboard = () => {
                     );
                 })}
             </ul>
-            <Header />
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import {getAuth, signOut} from "../../../node_modules/firebase/auth";
 import {useNavigate} from "react-router-dom";
+import "./index.css";
 export const Logout = () => {
     const navigate = useNavigate();
     const handleLogout = async () => {
@@ -16,7 +17,7 @@ export const Logout = () => {
 
     return (
         <div>
-            <button onClick = {handleLogout}>Logout</button>
+            <button className = "logout-button" onClick = {handleLogout}>Logout</button>
         </div>
     );
 };

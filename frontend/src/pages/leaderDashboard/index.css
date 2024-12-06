@@ -1,0 +1,24 @@
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin-bottom: 20px;
+ 
+    padding: 0;
+}
+
+.leader-header{
+    text-align: right;
+    margin-left: 160%;
+  
+}
+
+.leader-dash-background{
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    background-color:white;
+}
